@@ -8,6 +8,9 @@ Through continued work on this project, the PSE team for zkEmail can completely 
 
 ## Architecture
 
+<img width="653" alt="Screenshot 2024-07-14 at 8 44 39 AM" src="https://github.com/user-attachments/assets/0de2d295-6e92-4d4a-856d-dd158a1881b0">
+
+
 The architecture of the protocol is as follows: 
 
 The zkEmail contracts have a mapping for domain name and their respective public keys. If the contract receives a domain name who's key is not valid (either because it's not present or because of periodic key rotation), it calls a function on the serviceManager contract of the AVS called the DKIMRegistry which emits an event.
